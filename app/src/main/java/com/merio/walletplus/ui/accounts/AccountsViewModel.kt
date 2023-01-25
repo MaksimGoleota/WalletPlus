@@ -1,10 +1,10 @@
-package com.merio.walletplus.ui.gallery
+package com.merio.walletplus.ui.accounts
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class GalleryViewModel : ViewModel() {
+class AccountsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is gallery Fragment"

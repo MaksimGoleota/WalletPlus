@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/authorizationFragment">
 
     <fragment
         android:id="@+id/nav_home"
@@ -12,14 +12,34 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.merio.walletplus.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_accounts"
+        android:name="com.merio.walletplus.ui.accounts.AccountsFragment"
+        android:label="@string/menu_accounts"
+        tools:layout="@layout/fragment_accounts" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.merio.walletplus.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_charts"
+        android:name="com.merio.walletplus.ui.charts.ChartsFragment"
+        android:label="@string/menu_charts"
+        tools:layout="@layout/fragment_charts" />
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="com.merio.walletplus.ui.categories.CategoriesFragment"
+        android:label="@string/menu_categories"
+        tools:layout="@layout/fragment_categories" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.merio.walletplus.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/nav_developer_contact"
+        android:name="com.merio.walletplus.ui.developerContact.DeveloperContactFragment"
+        android:label="@string/menu_developer_contact"
+        tools:layout="@layout/fragment_developer_contact" />
+    <fragment
+        android:id="@+id/authorizationFragment"
+        android:name="com.merio.walletplus.ui.authorization.AuthorizationFragment"
+        android:label="fragment_authorization"
+        tools:layout="@layout/fragment_authorization" />
 </navigation>
