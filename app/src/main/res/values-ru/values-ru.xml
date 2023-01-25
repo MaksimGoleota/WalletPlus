@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Кошелёк Плюс</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="user_name">Имя пользователя</string>
+    <string name="user_email">Почта пользователя</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Главная</string>
+    <string name="menu_accounts">Счета</string>
+    <string name="menu_charts">Графики</string>
+    <string name="menu_categories">Категории</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_developer_contact">Связь с разработчиком</string>
+
+    <string name="enter_username">Введите имя пользователя</string>
+    <string name="enter_your_email">Введите почту</string>
+    <string name="create">Создать</string>
+
+    <string name="no_password_entered_please_try_again">Пароль не введен, попробуйте еще раз!</string>
+    <string name="password_saved_successfully">Пароль успешно сохранён!</string>
+
+</resources>
