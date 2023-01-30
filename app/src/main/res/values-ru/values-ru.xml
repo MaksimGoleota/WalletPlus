@@ -16,9 +16,15 @@
 
     <string name="enter_username">Введите имя пользователя</string>
     <string name="enter_your_email">Введите почту</string>
+    <string name="enter_your_password">Введите пароль</string>
     <string name="create">Создать</string>
 
-    <string name="no_password_entered_please_try_again">Пароль не введен, попробуйте еще раз!</string>
-    <string name="password_saved_successfully">Пароль успешно сохранён!</string>
+    <string name="not_all_fields_are_filled">Не все поля заполнены!</string>
+    <string name="data_saved_successfully">Данные успешно сохранены!</string>
+
+    <string name="sign_in">Войти</string>
+    <string name="logged_in">Вы вошли в систему!</string>
+    <string name="invalid_data">Неверные данные!</string>
+
 
 </resources>

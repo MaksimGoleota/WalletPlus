@@ -8,7 +8,9 @@ object PasswordStorage {
     private const val NAME = "PasswordStorage"
     private const val MODE = Context.MODE_PRIVATE
     private var preferences: SharedPreferences? = null
-    private val PASSWORD = "password"
+    private const val USER_NAME = "name"
+    private const val USER_EMAIL = "email"
+    private const val USER_PASSWORD = "password"
 
     fun init(context: Context) {
         preferences = context.getSharedPreferences(
@@ -17,23 +19,25 @@ object PasswordStorage {
         )
     }
 
-    fun savePassword(newPassword: String) {
+
+    fun savePassword(newName: String, newEmail: String, newPassword: String) {
         val editor = preferences?.edit()
         if (editor != null) {
-            editor.putString(PASSWORD, newPassword)
+            editor.putString(USER_NAME, newName)
+            editor.putString(USER_EMAIL, newEmail)
+            editor.putString(USER_PASSWORD, newPassword)
             editor.apply()
         }
     }
+    fun getUserName(): String = preferences?.getString(USER_NAME, "") ?: ""
+    fun getUserEmail(): String = preferences?.getString(USER_EMAIL, "") ?: ""
+    fun getPassword(): String = preferences?.getString(USER_PASSWORD, "") ?: ""
 
-    fun getPassword(): String = preferences?.getString(
-        PASSWORD, ""
-    ) ?: ""
-
-    fun deletePassword() {
-        val editor = preferences?.edit()
-        if (editor != null) {
-            editor.clear()
-            editor.apply()
-        }
-    }
+//    fun deletePassword() {
+//        val editor = preferences?.edit()
+//        if (editor != null) {
+//            editor.clear()
+//            editor.apply()
+//        }
+//    }
 }
