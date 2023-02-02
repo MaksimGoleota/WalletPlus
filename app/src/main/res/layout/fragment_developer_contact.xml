@@ -1,8 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.developerContact.DeveloperContactFragment">
+    tools:context=".features.developerContact.DeveloperContactFragment">
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/editTextMessageSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin_small"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_large"
+        android:backgroundTint="@color/black"
+        android:elevation="@dimen/elevation"
+        android:ems="10"
+        android:hint="@string/message_subject"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/text_xxlarge"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUserEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin_small"
+        android:backgroundTint="@color/black"
+        android:elevation="@dimen/elevation"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/text_xxlarge"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMessageForEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMessageForEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin_small"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_large"
+        android:text="@string/a_reply_will_be_sent_to_this_email"
+        android:textSize="@dimen/text_mlarge"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMessageText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextMessageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin_small"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_large"
+        android:backgroundTint="@color/black"
+        android:elevation="@dimen/elevation"
+        android:ems="10"
+        android:hint="@string/message_text"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/text_xxlarge"
+        app:layout_constraintBottom_toTopOf="@+id/btnDeveloperContact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDeveloperContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation"
+        android:stateListAnimator="@null"
+        android:text="@string/send"
+        android:textSize="@dimen/text_xxlarge"
+        android:translationZ="@dimen/translationZ"
+        app:cornerRadius="@dimen/cornerRadius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

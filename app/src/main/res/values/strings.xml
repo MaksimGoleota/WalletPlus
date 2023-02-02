@@ -23,9 +23,16 @@
 
 
     <string name="sign_in">Sign in</string>
-
     <string name="logged_in">Logged in!</string>
     <string name="invalid_data">Invalid data!</string>
+
+    <string name="message_subject">Message Subject</string>
+    <string name="email">Email</string>
+    <string name="message_text">Message text</string>
+    <string name="a_reply_will_be_sent_to_this_email">A reply will be sent to this email.</string>
+    <string name="send">Send</string>
+    <string name="choose_email_client">Choose Email Client…</string>
+    <string name="fields_filled_out_incorrectly">Fields filled out incorrectly</string>
 
 
 </resources>

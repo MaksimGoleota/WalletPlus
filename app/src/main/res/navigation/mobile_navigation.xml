@@ -7,34 +7,34 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.merio.walletplus.ui.home.HomeFragment"
+        android:name="com.merio.walletplus.features.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_accounts"
-        android:name="com.merio.walletplus.ui.accounts.AccountsFragment"
+        android:name="com.merio.walletplus.features.accounts.AccountsFragment"
         android:label="@string/menu_accounts"
         tools:layout="@layout/fragment_accounts" />
 
     <fragment
         android:id="@+id/nav_charts"
-        android:name="com.merio.walletplus.ui.charts.ChartsFragment"
+        android:name="com.merio.walletplus.features.charts.ChartsFragment"
         android:label="@string/menu_charts"
         tools:layout="@layout/fragment_charts" />
     <fragment
         android:id="@+id/nav_categories"
-        android:name="com.merio.walletplus.ui.categories.CategoriesFragment"
+        android:name="com.merio.walletplus.features.categories.CategoriesFragment"
         android:label="@string/menu_categories"
         tools:layout="@layout/fragment_categories" />
     <fragment
         android:id="@+id/nav_settings"
-        android:name="com.merio.walletplus.ui.settings.SettingsFragment"
+        android:name="com.merio.walletplus.features.settings.SettingsFragment"
         android:label="@string/menu_settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/nav_developer_contact"
-        android:name="com.merio.walletplus.ui.developerContact.DeveloperContactFragment"
+        android:name="com.merio.walletplus.features.developerContact.DeveloperContactFragment"
         android:label="@string/menu_developer_contact"
         tools:layout="@layout/fragment_developer_contact" />
 </navigation>

@@ -4,58 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.authorization.CreateUserActivity">
+    tools:context=".features.authorization.CreateUserActivity">
 
     <EditText
-        android:id="@+id/editTextPersonName"
+        android:id="@+id/editTextName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin_small"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:backgroundTint="@color/black"
+        android:elevation="@dimen/elevation"
         android:ems="10"
         android:hint="@string/enter_username"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="@dimen/text_xxlarge"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextEmailAddress"
+        android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin_small"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:backgroundTint="@color/black"
+        android:elevation="@dimen/elevation"
         android:ems="10"
         android:hint="@string/enter_your_email"
         android:inputType="textEmailAddress"
+        android:textSize="@dimen/text_xxlarge"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPersonName" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin_small"
+        android:backgroundTint="@color/black"
+        android:elevation="@dimen/elevation"
         android:ems="10"
         android:hint="@string/enter_your_password"
         android:inputType="textPassword"
+        android:textSize="@dimen/text_xxlarge"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnCreateProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:elevation="@dimen/elevation"
+        android:stateListAnimator="@null"
         android:text="@string/create"
+        android:textSize="@dimen/text_xxlarge"
+        android:translationZ="@dimen/translationZ"
+        app:cornerRadius="@dimen/cornerRadius"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
