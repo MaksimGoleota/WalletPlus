@@ -11,7 +11,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import com.merio.walletplus.data.PasswordStorage
+import com.merio.walletplus.domain.sharedpreferences.PasswordStorage
 import com.merio.walletplus.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 

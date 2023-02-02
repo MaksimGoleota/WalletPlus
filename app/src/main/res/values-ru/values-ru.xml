@@ -26,5 +26,13 @@
     <string name="logged_in">Вы вошли в систему!</string>
     <string name="invalid_data">Неверные данные!</string>
 
+    <string name="message_subject">Тема сообщения</string>
+    <string name="email">Электронная почта</string>
+    <string name="message_text">Текст сообщения</string>
+    <string name="a_reply_will_be_sent_to_this_email">На эту почту будет выслан ответ</string>
+    <string name="send">Отправить</string>
+    <string name="choose_email_client">Выбрать почту клиента…</string>
+    <string name="fields_filled_out_incorrectly">Поля заполнены некорректно</string>
+
 
 </resources>
