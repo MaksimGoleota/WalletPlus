@@ -7,6 +7,7 @@
     <string name="user_email">Почта пользователя</string>
     <string name="nav_header_desc">Navigation header</string>
 
+    //Menu
     <string name="menu_home">Главная</string>
     <string name="menu_accounts">Счета</string>
     <string name="menu_charts">Графики</string>
@@ -14,18 +15,24 @@
     <string name="menu_settings">Настройки</string>
     <string name="menu_developer_contact">Связь с разработчиком</string>
 
+    //Create user
     <string name="enter_username">Введите имя пользователя</string>
     <string name="enter_your_email">Введите почту</string>
     <string name="enter_your_password">Введите пароль</string>
     <string name="create">Создать</string>
-
     <string name="not_all_fields_are_filled">Не все поля заполнены!</string>
     <string name="data_saved_successfully">Данные успешно сохранены!</string>
 
+    //Authorization
     <string name="sign_in">Войти</string>
     <string name="logged_in">Вы вошли в систему!</string>
     <string name="invalid_data">Неверные данные!</string>
 
+    //Tabs
+    <string name="income">Доходы</string>
+    <string name="expenses">Расходы</string>
+
+    //Developer contact
     <string name="message_subject">Тема сообщения</string>
     <string name="email">Электронная почта</string>
     <string name="message_text">Текст сообщения</string>
@@ -34,5 +41,29 @@
     <string name="choose_email_client">Выбрать почту клиента…</string>
     <string name="fields_filled_out_incorrectly">Поля заполнены некорректно</string>
 
+    //Categories income
+    <string name="interest_on_deposit">Процент по вкладу</string>
+    <string name="business">Бизнес</string>
+    <string name="present">Подарок</string>
+    <string name="salary">Зарплата</string>
+    <string name="other">Другое</string>
 
+    //Categories expenses
+    <string name="car">Автомобиль</string>
+    <string name="appliances">Бытовая техника</string>
+    <string name="children">Дети</string>
+    <string name="pets">Домашние животные</string>
+    <string name="health_and_beauty">Здоровье и красота</string>
+    <string name="mortgages_debts_loans">Ипотека, долги, кредиты</string>
+    <string name="apartment_and_utilities">Квартира и коммунальные</string>
+    <string name="taxes_and_insurance">Налоги и страхование</string>
+    <string name="education">Образование</string>
+    <string name="clothes_and_accessories">Одежда и аксессуары</string>
+    <string name="recreation_and_entertainment">Отдых и развлечение</string>
+    <string name="nutrition">Питание</string>
+    <string name="repair">Ремонт</string>
+    <string name="household_products">Товары для дома</string>
+    <string name="transport">Транспорт</string>
+    <string name="hobby">Хобби</string>
+    <string name="interior">Интерьер </string>
 </resources>
