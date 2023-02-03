@@ -24,9 +24,16 @@
         tools:layout="@layout/fragment_charts" />
     <fragment
         android:id="@+id/nav_categories"
-        android:name="com.merio.walletplus.features.categories.CategoriesFragment"
+        android:name="com.merio.walletplus.features.categories.CategoriesHomeFragment"
         android:label="@string/menu_categories"
-        tools:layout="@layout/fragment_categories" />
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_nav_categories_to_expensesFragment"
+            app:destination="@id/expensesFragment" />
+        <action
+            android:id="@+id/action_nav_categories_to_incomeFragment"
+            app:destination="@id/incomeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_settings"
         android:name="com.merio.walletplus.features.settings.SettingsFragment"
@@ -37,4 +44,24 @@
         android:name="com.merio.walletplus.features.developerContact.DeveloperContactFragment"
         android:label="@string/menu_developer_contact"
         tools:layout="@layout/fragment_developer_contact" />
+    <fragment
+        android:id="@+id/expensesFragment"
+        android:name="com.merio.walletplus.features.categories.expenses.ExpensesFragment"
+        android:label="fragment_expenses"
+        tools:layout="@layout/fragment_expenses" />
+    <fragment
+        android:id="@+id/incomeFragment"
+        android:name="com.merio.walletplus.features.categories.income.IncomeFragment"
+        android:label="fragment_income"
+        tools:layout="@layout/fragment_income" />
+    <activity
+        android:id="@+id/createUserActivity"
+        android:name="com.merio.walletplus.features.authorization.CreateUserActivity"
+        android:label="activity_create_user"
+        tools:layout="@layout/activity_create_user" />
+    <activity
+        android:id="@+id/authorizationActivity"
+        android:name="com.merio.walletplus.features.authorization.AuthorizationActivity"
+        android:label="activity_authorization"
+        tools:layout="@layout/activity_authorization" />
 </navigation>
