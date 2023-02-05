@@ -65,5 +65,12 @@
     <string name="household_products">Товары для дома</string>
     <string name="transport">Транспорт</string>
     <string name="hobby">Хобби</string>
-    <string name="interior">Интерьер </string>
+    <string name="interior">Интерьер</string>
+
+    //Settings
+    <string name="change_password">Сменить пароль</string>
+    <string name="change_user">Сменить пользователя</string>
+    <string name="delete_user">Удалить пользователя</string>
+    <string name="language">Язык</string>
+    <string name="delete_all_data">Удалить все данные</string>
 </resources>
