@@ -1,8 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".features.settings.SettingsFragment">
 
-</FrameLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_margin_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small">
+
+            <ImageView
+                android:id="@+id/iconForSettingsChangePassword"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+                android:background="@drawable/change_password"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/settingsChangePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:singleLine="true"
+                android:text="@string/change_password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_xlarge"
+                app:layout_constraintBottom_toBottomOf="@+id/iconForSettingsChangePassword"
+                app:layout_constraintStart_toEndOf="@+id/iconForSettingsChangePassword"
+                app:layout_constraintTop_toTopOf="@+id/iconForSettingsChangePassword"
+                tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewChangeUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewChangePassword">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small">
+
+            <ImageView
+                android:id="@+id/iconForChangeUser"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+                android:background="@drawable/change_user"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/changeUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:singleLine="true"
+                android:text="@string/change_user"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_xlarge"
+                app:layout_constraintBottom_toBottomOf="@+id/iconForChangeUser"
+                app:layout_constraintStart_toEndOf="@+id/iconForChangeUser"
+                app:layout_constraintTop_toTopOf="@+id/iconForChangeUser"
+                tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDeleteUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewChangeUser">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small">
+
+            <ImageView
+                android:id="@+id/iconForDeleteUser"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+                android:background="@drawable/delete_user"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/deleteUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:singleLine="true"
+                android:text="@string/delete_user"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_xlarge"
+                app:layout_constraintBottom_toBottomOf="@+id/iconForDeleteUser"
+                app:layout_constraintStart_toEndOf="@+id/iconForDeleteUser"
+                app:layout_constraintTop_toTopOf="@+id/iconForDeleteUser"
+                tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewDeleteUser">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small">
+
+            <ImageView
+                android:id="@+id/iconForLanguage"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+                android:background="@drawable/language"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:singleLine="true"
+                android:text="@string/language"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_xlarge"
+                app:layout_constraintBottom_toBottomOf="@+id/iconForLanguage"
+                app:layout_constraintStart_toEndOf="@+id/iconForLanguage"
+                app:layout_constraintTop_toTopOf="@+id/iconForLanguage"
+                tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDeleteAllData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewLanguage">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small">
+
+            <ImageView
+                android:id="@+id/iconForDeleteAllData"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+                android:background="@drawable/delete_all_data"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/deleteAllData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:singleLine="true"
+                android:text="@string/delete_all_data"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_xlarge"
+                app:layout_constraintBottom_toBottomOf="@+id/iconForDeleteAllData"
+                app:layout_constraintStart_toEndOf="@+id/iconForDeleteAllData"
+                app:layout_constraintTop_toTopOf="@+id/iconForDeleteAllData"
+                tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

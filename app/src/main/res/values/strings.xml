@@ -65,4 +65,11 @@
     <string name="transport">Transport</string>
     <string name="hobby">Hobby</string>
     <string name="interior">Interior</string>
+
+    //Settings
+    <string name="change_password">Change password</string>
+    <string name="change_user">Change user</string>
+    <string name="delete_user">Delete user</string>
+    <string name="language">Language</string>
+    <string name="delete_all_data">Delete all data</string>
 </resources>
