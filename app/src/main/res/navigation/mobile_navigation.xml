@@ -56,7 +56,7 @@
         tools:layout="@layout/fragment_income" />
     <activity
         android:id="@+id/createUserActivity"
-        android:name="com.merio.walletplus.features.authorization.CreateUserActivity"
+        android:name="com.merio.walletplus.features.authorization.createuser.CreateUserActivity"
         android:label="activity_create_user"
         tools:layout="@layout/activity_create_user" />
     <activity

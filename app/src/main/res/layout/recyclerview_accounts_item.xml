@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/categories"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/padding_small">
+
+        <ImageView
+            android:id="@+id/iconForAccounts"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="@dimen/layout_height"
+            android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+            android:layout_marginTop="@dimen/activity_vertical_margin_small"
+            android:background="@drawable/money"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_xlarge"
+            app:layout_constraintStart_toEndOf="@+id/iconForAccounts"
+            app:layout_constraintTop_toTopOf="@+id/iconForAccounts"
+            tools:text="Maks Haliot" />
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/iconForAccounts"
+            app:layout_constraintTop_toBottomOf="@+id/userName"
+            tools:text="maks@gmail.com" />
+
+        <TextView
+            android:id="@+id/amountMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_vertical_margin_small"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_xxlarge"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textViewCurrencyName"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="10000" />
+
+        <TextView
+            android:id="@+id/textViewCurrencyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_vertical_margin_small"
+            android:text="@string/by"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_xlarge"
+            app:layout_constraintBottom_toTopOf="@+id/amountMoney"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amountMoney" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

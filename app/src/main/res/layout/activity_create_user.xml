@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".features.authorization.CreateUserActivity">
+    tools:context=".features.authorization.createuser.CreateUserActivity">
 
     <EditText
         android:id="@+id/editTextName"
@@ -38,6 +38,7 @@
         android:textSize="@dimen/text_xxlarge"
         app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -46,16 +47,47 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/activity_horizontal_margin_small"
         android:layout_marginEnd="@dimen/activity_horizontal_margin_small"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
         android:backgroundTint="@color/black"
         android:elevation="@dimen/elevation"
         android:ems="10"
         android:hint="@string/enter_your_password"
         android:inputType="textPassword"
         android:textSize="@dimen/text_xxlarge"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/editTextBalance"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextBalance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/black"
+        android:elevation="@dimen/elevation"
+        android:ems="10"
+        android:hint="@string/enter_your_balance"
+        android:inputType="textPassword"
+        android:textSize="@dimen/text_xxlarge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCurrencyName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCurrencyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin_small"
+        android:text="@string/by"
+        android:textSize="@dimen/text_xxlarge"
+        android:textStyle="bold"
+        android:padding="@dimen/padding_small"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextBalance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextBalance" />
 
     <Button
         android:id="@+id/btnCreateProfile"
@@ -70,6 +102,8 @@
         app:cornerRadius="@dimen/cornerRadius"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextBalance" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

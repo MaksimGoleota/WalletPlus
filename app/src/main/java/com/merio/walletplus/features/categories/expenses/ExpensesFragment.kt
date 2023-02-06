@@ -26,7 +26,7 @@ class ExpensesFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?): Unit = with(binding) {
         super.onViewCreated(view, savedInstanceState)
-        val adapter = IncomeAdapter()
+        val adapter = ExpensesAdapter()
         recyclerViewExpenses.apply {
             this.adapter = adapter
             layoutManager = LinearLayoutManager(context)

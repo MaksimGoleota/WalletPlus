@@ -6,13 +6,61 @@
     android:layout_height="match_parent"
     tools:context=".features.accounts.AccountsFragment">
 
-    <TextView
-        android:id="@+id/text_gallery"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAccounts"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalOnAccountsAmount"
+        tools:listitem="@layout/recyclerview_accounts_item" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAccounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/textextViewTotalOnAccounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_margin_toolbar"
+        android:text="@string/total_on_accounts"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_xxlarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTotalOnAccountsAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_xxlarge"
+        android:text="$$$"
+        app:layout_constraintEnd_toEndOf="@+id/textextViewTotalOnAccounts"
+        app:layout_constraintStart_toStartOf="@+id/textextViewTotalOnAccounts"
+        app:layout_constraintTop_toBottomOf="@+id/textextViewTotalOnAccounts" />
+
+    <TextView
+        android:id="@+id/textViewCurrencyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_vertical_margin_small"
+        android:text="@string/by"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_xlarge"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewAccounts"
+        app:layout_constraintStart_toEndOf="@+id/textViewTotalOnAccountsAmount"
+        app:layout_constraintTop_toBottomOf="@+id/textextViewTotalOnAccounts" />
 </androidx.constraintlayout.widget.ConstraintLayout>
