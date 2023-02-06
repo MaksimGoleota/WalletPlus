@@ -19,6 +19,8 @@
     <string name="enter_username">Введите имя пользователя</string>
     <string name="enter_your_email">Введите почту</string>
     <string name="enter_your_password">Введите пароль</string>
+    <string name="enter_your_balance">Введите баланс</string>
+    <string name="by">BY</string>
     <string name="create">Создать</string>
     <string name="not_all_fields_are_filled">Не все поля заполнены!</string>
     <string name="data_saved_successfully">Данные успешно сохранены!</string>
@@ -73,4 +75,10 @@
     <string name="delete_user">Удалить пользователя</string>
     <string name="language">Язык</string>
     <string name="delete_all_data">Удалить все данные</string>
+
+    //Error
+    <string name="error">Ошибка</string>
+
+    //Accounts
+    <string name="total_on_accounts">Всего по счетам:</string>
 </resources>
